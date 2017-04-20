@@ -1,0 +1,111 @@
+uid  用户id
+channelid  
+sign   token
+itemid --> 渠道号  360或者百度  两个条件：$itemid是否为空 不为空时水晶数量是否相等
+可以写个空方法，保留着
+
+任务一：活动 功能页面
+
+
+eq 等于
+neq 不等于
+gt 大于
+egt 大于等于
+lt 小于
+elt 小于等于
+like LIKE
+between BETWEEN
+notnull IS NUT NULL
+null IS NULL
+
+
+移动端的开发人员，需要向后台传什么数据 ，数据格式是什么 
+
+写一个方法对对应的数据进行解析 存储
+
+看看他们需要什么 数据 就返回什么数据，数据格式json就可以了
+
+
+任务二：礼品商城 ------>商品配置表 商品记录表 商品地址表
+
+
+各种卡：收货人姓名、收货人手机、手机验证码
+ 
+话费：  收货人手机、手机验证码
+ 
+实物：  收货人姓名、收货人手机、选择地区、详细地址、手机验证码
+
+
+兑换方式：1、通过道具兑换  2、通过水晶数量兑换
+
+
+D:\软件工具\gongjuanzhuang\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\atom\bin;D:\wamp\mysql\bin
+数据库备份：mysqldump -u root -p --all-databases > d:/sql.sql
+
+
+ssh root@172.16.10.23   root
+
+root@112.124.41.108:/git/sh-dwc-pay.git
+
+
+$ git config --global user.name "litingting"
+
+$ git config --global user.email "litingting@100etech.com"
+
+$ ssh-keygen -t rsa -C  "litingting@100etech.com"
+
+
+
+
+一、设置Git的user name和email:
+$ git config --global user.name "litingting"
+
+$ git config --global user.email "litingting@100etech.com"
+
+二、生成SSH密钥过程：
+1.查看是否已经有了ssh密钥：cd ~/.ssh
+如果没有密钥则不会有此文件夹，有则备份删除
+
+2.生存密钥：
+$ ssh-keygen -t rsa -C  "litingting@100etech.com"
+按3个回车，密码为空。
+
+Your identification has been saved in /home/tekkub/.ssh/id_rsa.
+Your public key has been saved in /home/tekkub/.ssh/id_rsa.pub.
+The key fingerprint is:
+
+
+最后得到了两个文件：id_rsa和id_rsa.pub
+
+3.添加密钥到ssh：ssh-add 文件名
+需要之前输入密码。
+4.在github上添加ssh密钥，这要添加的是“id_rsa.pub”里面的公钥。
+
+打开https://github.com/ ，登陆xuhaiyan825，然后添加ssh。
+
+5.测试：ssh git@github.com
+
+
+
+.协作编程：
+将本地repo于远程的origin的repo合并，
+
+推送本地更新到远程：
+
+git push origin master
+
+更新远程更新到本地：
+
+git pull origin master
+
+补充：
+添加远端repo：
+
+$ git remote add upstream git://github.com/pjhyett/github-services.git
+
+重命名远端repo：
+
+$ git://github.com/pjhyett/github-services.git为“upstream”
+
+
+
